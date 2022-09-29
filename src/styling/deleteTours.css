@@ -1,0 +1,86 @@
+.delete-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+  flex: 1;
+}
+
+.grid-container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+}
+
+.grid-element {
+  text-align: center;
+  position: relative;
+  color: white;
+  width: 250px;
+  height: 250px;
+}
+
+.grid-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.centered {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.centered:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.centered p {
+  margin: 15px 0;
+}
+
+.centered button {
+  padding: 10px;
+  width: fit-content;
+  border-radius: 50%;
+  background-color: inherit;
+  color: white;
+  font-weight: 900;
+  border: 1px solid white;
+}
+
+.disable {
+  display: none;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .delete-container {
+    height: 100%;
+  }
+}

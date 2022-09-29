@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  min-height: 100vh;
+  flex: 1;
+}
+
+.main-container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-container h1 {
+  margin: 20px 0;
+  color: #333;
+  font-weight: 900;
+}
+
+.main-container p {
+  color: #707070;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.element {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* carrousel code */
+.swiper-wrapper {
+  justify-content: center;
+  width: min-content;
+  margin: 0 auto;
+}
+
+.slide-container {
+  width: 100%;
+  padding: 0 40px 40px 40px;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card-image {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.dots-division {
+  margin: 25px 0;
+  letter-spacing: 0.2rem;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 450px) {
+  .app {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .main-container {
+    max-width: 80%;
+  }
+}

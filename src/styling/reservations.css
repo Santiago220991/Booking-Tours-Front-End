@@ -1,0 +1,15 @@
+.reservation-countainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cancel-btn {
+  cursor: pointer;
+}
+
+.no-reservations {
+  width: 100%;
+  margin-top: 10%;
+  font-size: 2rem;
+  text-align: center;
+}
