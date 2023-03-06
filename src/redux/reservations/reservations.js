@@ -1,7 +1,7 @@
 const ADD_RESERVATION = 'ADD_RESERVATION';
 const REMOVE_RESERVATION = 'REMOVE_RESERVATION';
 const GET_API_DATA_RESERVATION = 'GET_API_DATA_RESERVATION';
-const URL = 'https://tourify-app.herokuapp.com/user_tours';
+const URL = 'https://booking-tours-production.up.railway.app/user_tours';
 
 const initialState = [];
 
